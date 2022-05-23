@@ -23,11 +23,10 @@ class EmployeeApplicationTests {
 
 	@Test
 	public void createEmployee(){
-//		Employee employee = new Employee("John", 32, 1, "john_john@john.com");
-//		Employee employee1 = new Employee("Mary", 35, 564, "mary_mary@mary.com");
-		Employee mat = new Employee("Bob", 12, 324, "bvabsdb@gmail.com");
-		employeeRepository.save(mat);
-//		employeeRepository.save(employee1);
+		Employee employee1 = new Employee("Mary", 35, 564, "mary_mary@mary.com");
+		Employee employee = new Employee("Bob", 12, 324, "bvabsdb@gmail.com");
+		employeeRepository.save(employee);
+		employeeRepository.save(employee1);
 	}
 
 }
